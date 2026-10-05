@@ -1,0 +1,8 @@
+directory-info.last
+directory-info.new
+whitelist.txt
+.cron.lock
+watched/
+quarantine/
+*.log
+.DS_Store
