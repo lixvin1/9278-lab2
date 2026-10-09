@@ -11,7 +11,7 @@ fi
 while true; do
   files=("$malicious_dir"/*)
   i=1
-
+echo "Choose a file:"
   for f in "${files[@]}"; do
     filename=$(basename "$f")
     echo "$i: $filename"
