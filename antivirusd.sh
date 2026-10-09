@@ -8,6 +8,9 @@ scan_dir() {
   for file in "$dir"/*; do
     if [ -f "$file" ]; then
       filename=$(basename "$file")
+      if [ -f whitelist.txt ] && grep -Fxq "$filename" whitelist.txt; then
+  continue
+fi
       malicious=0
 
       case "$filename" in
